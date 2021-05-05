@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr" xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml">  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="signup.css"/>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <input class="c-checkbox" type="checkbox" id="start">
+<input class="c-checkbox" type="checkbox" id="progress2">
+<input class="c-checkbox" type="checkbox" id="progress3">
+<input class="c-checkbox" type="checkbox" id="finish">
+<div class="c-form__progress"></div>
+
+<div class="c-formContainer">
+  <div class="c-welcome" onclick="submit()" style="cursor: pointer;"> SignIn  </div>
+  <form class="c-form" method="POST" action="signin.php">
+    <div class="c-form__group">
+      <label class="c-form__label" for="username">
+                    <input
+                        type="text"
+                        id="username"
+                        class="c-form__input"
+                        placeholder=" "
+                        pattern="[^\s]+"
+                        required name="username">
+
+                    <label class="c-form__next" for="progress2" role="button">
+                        <span class="c-form__nextIcon"></span>
+                    </label>
+
+      <span class="c-form__groupLabel">Enter your username.</span>
+      <b class="c-form__border"></b>
+      </label>
+    </div>
+
+  
+
+    <div class="c-form__group">
+      <label class="c-form__label" for="fpass">
+                    <input
+                        type="password"
+                        id="fpass"
+                        class="c-form__input"
+                        placeholder=" "
+                        required name="password">
+                        <label class="c-form__next" for="finish" role="button">
+                          <span class="c-form__nextIcon"></span>
+                          <input type="submit" class="c-form__nextIcon" style="background-color: royalblue;color: seashell;display: none;"></input>
+                      </label>
+                    
+                    
+
+      <span class="c-form__groupLabel">Enter your password</span>
+      <b class="c-form__border"></b>
+      </label>
+      <input id="submit" type="submit" style="background-color: royalblue;color: seashell;visibility: hidden;">
+    </div>
+
+    <label class="c-form__toggle" for="start">User Login<span class="c-form__toggleIcon"></span></label>
+  </form>
+</div>
+    <!-- Optional JavaScript -->
+     <script>
+       function submit(){
+         document.getElementById('submit').click();
+       }
+     </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
